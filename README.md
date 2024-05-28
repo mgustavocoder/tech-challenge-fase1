@@ -1,21 +1,21 @@
 # Projeto lanchonete DDD com Arquitetura Hexagonal (Ports and Adapters)
-Esse projeto é o Tech Challenge da fase 1 da Pós Tech da FIAP em Arquitetura de Software, que consiste um uma aplicação monolítica para uma lanchonete, com uma API contendo funcionalidades de cadastro e listagem de produtos, realização de pedidos, entre outras coisas, vide documentação da API abaixo.
+Esse projeto é o Tech Challenge da fase 1 da Pós Tech da FIAP em Arquitetura de Software, que consiste em uma aplicação monolítica para uma lanchonete, com uma API contendo funcionalidades de cadastro e listagem de produtos, realização de pedidos, entre outras, vide documentação da API abaixo.
 
-A incialização do projeto, containers de aplicação, banco de dados são feitos através da ferramenta docker compose.
+A incialização do projeto pode ser feita através da ferramenta docker compose, que sobe dois containers docker, sendo um para o banco de dados MySQL e outro para a aplicação NodeJS.
 
-A arquitetura de software é a Arquitetura Hexagonal, juntamente com a modelagem Domain Driven Design.
+A arquitetura de software utilizada é a Arquitetura Hexagonal, juntamente com os conceitos do Domain Driven Design.
 
-O design estratégico e tático do DDD, além do Event Storming pode ser encontrado nessa página do Miro
+O design estratégico e tático do DDD e também o Event Storming pode ser encontrado no link abaixo:
 
 https://miro.com/app/board/uXjVKKkB6uI=/?share_link_id=33815948017
 
 
 ## Executando o projeto
-Execute o projeto utilizando o **Docker Compose**, executando o comando abaixo, na raíz do projeto
+Utilize a ferramenta **Docker Compose**, executando o comando abaixo, na raíz do projeto
 ```
 docker-compose up --build
 ```
-Esse comando irá subir dois containers docker (**tc-db** e **tc-app**), um para servir o banco de dados MySQL e outro para rodar a aplicação NodeJS.
+Esse comando irá subir dois containers docker (**tc-db** e **tc-app**), para servir o banco de dados MySQL e a aplicação NodeJS.
 
 ## Documentação da API
 ### Adicionar um lanche ao cardápio:
